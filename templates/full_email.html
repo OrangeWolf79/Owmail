@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Email
+{% endblock %}
+
+{% block main %}
+    <p style="display: inline;">{{ email[0][5] }}</p>
+    <h4 class="from">From: {{ email[0][0] }}</h4>
+    <h4 style="display:inline" class="to">To: {{ email[0][1] }}</h4>
+
+    <h3 style="text-align:left;" class="subject">{{ email[0][2] }}</h3>
+    <hr>
+    <p class="text" style="text-align:left;">{{ email[0][3] }}</p>
+    <hr>
+{% endblock %}

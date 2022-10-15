@@ -1,0 +1,79 @@
+nav .navbar-brand 
+{
+    font-size: xx-large;
+    margin-left:20px;
+    text-align: center;
+}
+
+nav .center
+{
+    text-align: center;
+}
+
+main
+{
+    overflow-x: auto;
+    text-align: center;
+}
+
+main .form-control
+{
+    display: inline-block;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+nav .navbar-brand .orange
+{
+    color: #ff8400;
+}
+
+nav .navbar-brand .slightlymoreorange
+{
+    color: #ff6000;
+}
+
+a:link {
+    color: #ff8400;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #ff4000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#ff6000;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.truncate {
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.subject {
+    margin: 20px;
+}
+
+.to {
+    float: right;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.from {
+    float: left;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.text {
+    margin: 20px;
+}

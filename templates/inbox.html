@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Inbox
+{% endblock %}
+
+{% block main %}
+    
+    <table class="table table-striped" style="width:100%">
+        <tr>
+            <th>From</th>
+            <th>To</th>
+            <th>Date and Time</th>
+            <th>Subject</th>
+            <th>Contents</th>
+            <th>New Window</th>
+        </tr>
+        {% if emails is none %}
+            <header>You do not currently have any emails.</header>
+        {% else %}
+            {% for email in emails %}
+                <tr>
+                    <td >{{ email[0] }}</td>
+                    <td >{{ email[1] }}</td>
+                    <td>{{ email[5] }}</td>
+                    <td>{{ email[2] }}</td>
+                    <td class="truncate">{{ email[3] }}</td>
+                    <td>
+                        <form action="/email" method="post" target="_blank">
+                        <button type="submit" name="email_id" value="{{ email[4] }}"class="btn btn-dark">Full View</button>
+                    </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+        {% endif %}
+{% endblock %}
