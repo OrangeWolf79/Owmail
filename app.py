@@ -121,7 +121,7 @@ def send():
     else:
         return render_template("send.html")
 
-# Can't accept sign ups because of security reasons
+# Not currently accepting signups for security reasons - will be fine to accept after authentication
 @app.route("/signup", methods=["GET", "POST"])
 def signup():
     return render_template("signup.html")
